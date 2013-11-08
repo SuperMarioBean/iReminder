@@ -18,6 +18,11 @@
     
     self.window.rootViewController = [mainStoryBoard instantiateInitialViewController];
     [self.window makeKeyAndVisible];
+    
+    UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (locationNotification) {
+        application.applicationIconBadgeNumber = 0;
+    }
     return YES;
 }
 
@@ -46,6 +51,22 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提醒"
+                                                        message:notification.alertBody
+                                                       delegate:self cancelButtonTitle:@"好的"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+    
+    application.applicationIconBadgeNumber = 0;
 }
 
 @end
