@@ -89,6 +89,7 @@
             /* 确认 生成本地通知并安排发送 */
             
             // MARK: 这里需要model来完成
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
             [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
         }
         else if (buttonIndex == 0){
