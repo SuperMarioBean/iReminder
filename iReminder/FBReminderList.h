@@ -14,4 +14,6 @@
 + (NSInteger)numberOfRowsInSection:(NSInteger)section;
 + (NSDictionary *)dictionaryForRowAtIndexPath:(NSIndexPath *)indexPath;
 + (void)scheduleReminderItemWithFireDate:(NSDate *)fireDate alertBody:(NSString *)alertBody;
+
++ (void)reScheduleReminderItemWithFormerIndexPath:(NSIndexPath *)indexPath FireDate:(NSDate *)fireDate alertBody:(NSString *)alertBody;
 @end

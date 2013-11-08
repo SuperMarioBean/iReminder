@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBModifyReminderViewController.h"
 
-@interface FBReminderListViewController : UITableViewController
+@interface FBReminderListViewController : UITableViewController<FBModifyReminderDelegate>
 
 @end

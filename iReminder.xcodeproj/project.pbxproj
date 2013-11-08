@@ -20,6 +20,7 @@
 		6CF6DEFE182CB061007C36F2 /* FBAddReminderItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6DEFD182CB061007C36F2 /* FBAddReminderItemViewController.m */; };
 		6CF6DF01182CB91D007C36F2 /* FBReminderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6DF00182CB91D007C36F2 /* FBReminderListViewController.m */; };
 		6CF6DF04182CBB46007C36F2 /* FBReminderList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6DF03182CBB46007C36F2 /* FBReminderList.m */; };
+		6CF6DF0A182CCA71007C36F2 /* FBModifyReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6DF09182CCA71007C36F2 /* FBModifyReminderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		6CF6DF00182CB91D007C36F2 /* FBReminderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBReminderListViewController.m; sourceTree = "<group>"; };
 		6CF6DF02182CBB46007C36F2 /* FBReminderList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBReminderList.h; sourceTree = "<group>"; };
 		6CF6DF03182CBB46007C36F2 /* FBReminderList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBReminderList.m; sourceTree = "<group>"; };
+		6CF6DF08182CCA70007C36F2 /* FBModifyReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBModifyReminderViewController.h; sourceTree = "<group>"; };
+		6CF6DF09182CCA71007C36F2 /* FBModifyReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBModifyReminderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				6CF6DF00182CB91D007C36F2 /* FBReminderListViewController.m */,
 				6CF6DF02182CBB46007C36F2 /* FBReminderList.h */,
 				6CF6DF03182CBB46007C36F2 /* FBReminderList.m */,
+				6CF6DF08182CCA70007C36F2 /* FBModifyReminderViewController.h */,
+				6CF6DF09182CCA71007C36F2 /* FBModifyReminderViewController.m */,
 			);
 			path = iReminder;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				6CF6DEFE182CB061007C36F2 /* FBAddReminderItemViewController.m in Sources */,
 				6CF6DF01182CB91D007C36F2 /* FBReminderListViewController.m in Sources */,
 				6CF6DF04182CBB46007C36F2 /* FBReminderList.m in Sources */,
+				6CF6DF0A182CCA71007C36F2 /* FBModifyReminderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +330,7 @@
 				6CF6DEF8182C2C76007C36F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
