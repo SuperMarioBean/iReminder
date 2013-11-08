@@ -67,7 +67,7 @@
     NSDictionary* dict = [FBReminderList dictionaryForRowAtIndexPath:indexPath];
     
     cell.textLabel.text = dict[@"Title"];
-    cell.detailTextLabel.text = dict[@"Subtitle"];
+    cell.detailTextLabel.text = dict[@"Subtitle"] ;
     
     return cell;
 }

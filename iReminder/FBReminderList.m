@@ -20,7 +20,7 @@
 
 + (NSDictionary *)dictionaryForRowAtIndexPath:(NSIndexPath *)indexPath{
     UILocalNotification* localNotification = [[[UIApplication sharedApplication] scheduledLocalNotifications] objectAtIndex:indexPath.row];
-    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:localNotification.alertBody,@"Title",localNotification.fireDate,@"Subtitle", nil];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:localNotification.alertBody,@"Title",[localNotification.fireDate description],@"Subtitle", nil];
     return dict;
 }
 
