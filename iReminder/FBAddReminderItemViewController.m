@@ -84,11 +84,10 @@
         /* 提示 返回重新编辑 */
     }
     else if (alertView.tag == 2){
-        NSLog(@"%d", buttonIndex);
         if (buttonIndex == 1) {
             /* 确认 生成本地通知并安排发送 */
             
-            // MARK: 这里需要model来完成
+            [FBReminderList scheduleReminderItemWithFireDate:self.datePicker.date alertBody:self.itemTextField.text];
             [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
             [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
         }

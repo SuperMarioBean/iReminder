@@ -48,28 +48,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // MARK: model类的工作，提供数据集有多少个区间
-    return 0;
+    return [FBReminderList numberOfSections];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // MARK: model类的工作，提供相应数据集区间中的个数
-    return 0;
+    return [FBReminderList numberOfRowsInSection:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+                
     /* 设置cell的工作 */
     
-    // MARK: model类的工作，提供具体数据集区间数据列的数据对象
+    NSDictionary* dict = [FBReminderList dictionaryForRowAtIndexPath:indexPath];
     
-    cell.textLabel.text = nil;
-    cell.detailTextLabel.text = nil;
+    cell.textLabel.text = dict[@"Title"];
+    cell.detailTextLabel.text = dict[@"Subtitle"];
     
     return cell;
 }
