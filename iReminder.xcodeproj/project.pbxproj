@@ -17,6 +17,7 @@
 		6CF6DEF1182C2C76007C36F2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF6DEF0182C2C76007C36F2 /* Default@2x.png */; };
 		6CF6DEF3182C2C76007C36F2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF6DEF2182C2C76007C36F2 /* Default-568h@2x.png */; };
 		6CF6DEFB182C2D90007C36F2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF6DEFA182C2D90007C36F2 /* MainStoryboard.storyboard */; };
+		6CF6DEFE182CB061007C36F2 /* FBAddReminderItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6DEFD182CB061007C36F2 /* FBAddReminderItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		6CF6DEF0182C2C76007C36F2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6CF6DEF2182C2C76007C36F2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6CF6DEFA182C2D90007C36F2 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6CF6DEFC182CB061007C36F2 /* FBAddReminderItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAddReminderItemViewController.h; sourceTree = "<group>"; };
+		6CF6DEFD182CB061007C36F2 /* FBAddReminderItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBAddReminderItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				6CF6DEEB182C2C76007C36F2 /* FBAppDelegate.h */,
 				6CF6DEEC182C2C76007C36F2 /* FBAppDelegate.m */,
 				6CF6DEE3182C2C76007C36F2 /* Supporting Files */,
+				6CF6DEFC182CB061007C36F2 /* FBAddReminderItemViewController.h */,
+				6CF6DEFD182CB061007C36F2 /* FBAddReminderItemViewController.m */,
 			);
 			path = iReminder;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			files = (
 				6CF6DEE9182C2C76007C36F2 /* main.m in Sources */,
 				6CF6DEED182C2C76007C36F2 /* FBAppDelegate.m in Sources */,
+				6CF6DEFE182CB061007C36F2 /* FBAddReminderItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
