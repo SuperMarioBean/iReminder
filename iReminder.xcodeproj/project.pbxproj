@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C9C03CB182E6BF800900262 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9C03CA182E6BF800900262 /* MainStoryboard.storyboard */; };
 		6CF6DEDD182C2C76007C36F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF6DEDC182C2C76007C36F2 /* UIKit.framework */; };
 		6CF6DEDF182C2C76007C36F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF6DEDE182C2C76007C36F2 /* Foundation.framework */; };
 		6CF6DEE1182C2C76007C36F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF6DEE0182C2C76007C36F2 /* CoreGraphics.framework */; };
@@ -16,7 +17,6 @@
 		6CF6DEEF182C2C76007C36F2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF6DEEE182C2C76007C36F2 /* Default.png */; };
 		6CF6DEF1182C2C76007C36F2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF6DEF0182C2C76007C36F2 /* Default@2x.png */; };
 		6CF6DEF3182C2C76007C36F2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CF6DEF2182C2C76007C36F2 /* Default-568h@2x.png */; };
-		6CF6DEFB182C2D90007C36F2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF6DEFA182C2D90007C36F2 /* MainStoryboard.storyboard */; };
 		6CF6DEFE182CB061007C36F2 /* FBAddReminderItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6DEFD182CB061007C36F2 /* FBAddReminderItemViewController.m */; };
 		6CF6DF01182CB91D007C36F2 /* FBReminderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6DF00182CB91D007C36F2 /* FBReminderListViewController.m */; };
 		6CF6DF04182CBB46007C36F2 /* FBReminderList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF6DF03182CBB46007C36F2 /* FBReminderList.m */; };
@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C9C03CA182E6BF800900262 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6CF6DED9182C2C76007C36F2 /* iReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF6DEDC182C2C76007C36F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6CF6DEDE182C2C76007C36F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,7 +38,6 @@
 		6CF6DEEE182C2C76007C36F2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6CF6DEF0182C2C76007C36F2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6CF6DEF2182C2C76007C36F2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		6CF6DEFA182C2D90007C36F2 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6CF6DEFC182CB061007C36F2 /* FBAddReminderItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBAddReminderItemViewController.h; sourceTree = "<group>"; };
 		6CF6DEFD182CB061007C36F2 /* FBAddReminderItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBAddReminderItemViewController.m; sourceTree = "<group>"; };
 		6CF6DEFF182CB91D007C36F2 /* FBReminderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBReminderListViewController.h; sourceTree = "<group>"; };
@@ -65,7 +65,6 @@
 		6CF6DED0182C2C76007C36F2 = {
 			isa = PBXGroup;
 			children = (
-				6CF6DEFA182C2D90007C36F2 /* MainStoryboard.storyboard */,
 				6CF6DEE2182C2C76007C36F2 /* iReminder */,
 				6CF6DEDB182C2C76007C36F2 /* Frameworks */,
 				6CF6DEDA182C2C76007C36F2 /* Products */,
@@ -93,9 +92,10 @@
 		6CF6DEE2182C2C76007C36F2 /* iReminder */ = {
 			isa = PBXGroup;
 			children = (
+				6CF6DEE3182C2C76007C36F2 /* Supporting Files */,
 				6CF6DEEB182C2C76007C36F2 /* FBAppDelegate.h */,
 				6CF6DEEC182C2C76007C36F2 /* FBAppDelegate.m */,
-				6CF6DEE3182C2C76007C36F2 /* Supporting Files */,
+				6C9C03CA182E6BF800900262 /* MainStoryboard.storyboard */,
 				6CF6DEFC182CB061007C36F2 /* FBAddReminderItemViewController.h */,
 				6CF6DEFD182CB061007C36F2 /* FBAddReminderItemViewController.m */,
 				6CF6DEFF182CB91D007C36F2 /* FBReminderListViewController.h */,
@@ -176,10 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CF6DEE7182C2C76007C36F2 /* InfoPlist.strings in Resources */,
+				6C9C03CB182E6BF800900262 /* MainStoryboard.storyboard in Resources */,
 				6CF6DEEF182C2C76007C36F2 /* Default.png in Resources */,
 				6CF6DEF1182C2C76007C36F2 /* Default@2x.png in Resources */,
 				6CF6DEF3182C2C76007C36F2 /* Default-568h@2x.png in Resources */,
-				6CF6DEFB182C2D90007C36F2 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
